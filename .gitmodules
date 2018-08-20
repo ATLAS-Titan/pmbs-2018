@@ -1,0 +1,3 @@
+[submodule "moab-data"]
+	path = moab-data
+	url = https://github.com/ATLAS-Titan/moab-data
