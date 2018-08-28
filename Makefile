@@ -11,6 +11,7 @@
 #                                                   ~~ last updated 28 Aug 2018
 
 SHELL       :=  sh
+ECHO        :=  echo
 
 define alert
     printf '\033[1;31mError: %s\n\033[1;0m' $(strip $(1)) >&2
@@ -56,11 +57,15 @@ clobber: clean
 distclean: clobber
 	@   $(RM) $(SUBMISSION)
 
+open: $(SUBMISSION)
+	@   $(OPEN) $^
+
 reset:
 	@   $(call contingent, clear)
 
 run: $(SUBMISSION)
-	@   $(OPEN) $^
+	@   $(ECHO) '"$(SUBMISSION)" was created successfully.'
+
 ###
 
 $(SUBMISSION): $(wildcard $(PROJ_ROOT)/src/*.tex)
