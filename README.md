@@ -1,6 +1,8 @@
 README
 ======
 
+**NOTE**: We did not end up submitting anything to PMBS 2018.
+
 This project contains the source code needed to build a PDF for submission to
 [PMBS 2018](https://www.dcs.warwick.ac.uk/pmbs/pmbs/PMBS/Welcome.html).
 
